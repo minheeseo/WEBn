@@ -7,16 +7,16 @@
 </head>
 <body>
   <h1><a href="index.html"> WEB</a> </h1>
-  <input id="night_day" type="button" value="night"  onclick="
-  if(document.querySelector('#night_day').value === 'night'){
-    document.querySelector('body').style.backgroundColor='lightgray';
-    document.querySelector('h2').style.color='black';
-    document.querySelector('#night_day').value ='day';
+  <input type="button" value="night"  onclick="
+  var target=document.querySelector('body');
+  if(this.value === 'night'){
+    target.style.backgroundColor='lightgray';
+    target.style.color='black';
+    this.value ='day';
   } else {
-    document.querySelector('body').style.backgroundColor='white';
-    document.querySelector('body').style.color='black';
-    document.querySelector('h2').style.color='powderblue';
-    document.querySelector('#night_day').value = 'night';
+    target.style.backgroundColor='white';
+    target.style.color='black';
+    this.value = 'night';
   }
   ">
     <div id="grid">
@@ -32,5 +32,17 @@
         <span class="js" id="first"> JavaScript </span> (/ˈdʒɑːvəˌskrɪpt/[6]), often abbreviated as JS, is a high-level, dynamic, weakly typed, prototype-based, multi-paradigm, and interpreted programming language. Alongside HTML and CSS, <span class="js"> JavaScript </span> is one of the three core technologies of World Wide Web content production. It is used to make webpages interactive and provide online programs, including video games. The majority of websites employ it, and all modern web browsers support it without the need for plug-ins by means of a built-in <span class="js"> JavaScript </span> engine. Each of the many <span class="js"> JavaScript </span> engines represent a different implementation of <span class="js"> JavaScript </span>, all based on the ECMAScript specification, with some engines not supporting the spec fully, and with many engines supporting additional features beyond ECMA.</p>
       </div>
     </div>
+    <input type="button" value="night"  onclick="
+    var target=document.querySelector('body');
+    if(this.value === 'night'){
+      target.style.backgroundColor='lightgray';
+      target.style.color='black';
+      this.value ='day';
+    } else {
+      target.style.backgroundColor='white';
+      target.style.color='black';
+      this.value = 'night';
+    }
+    ">
   </body>
 </html>
