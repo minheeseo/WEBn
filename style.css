@@ -4,6 +4,14 @@ body {
 h1{
   border-bottom: solid gray;
 }
+.js {
+  font-weight:bold;
+  color:red;
+}
+#first {
+  color:green;
+  text-decoration: underline;
+}
 #grid ol {
   border-right: 1px solid gray;
   padding: 20px;
